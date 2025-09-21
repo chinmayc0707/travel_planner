@@ -1,3 +1,4 @@
+import os
 def get_weather_data(CITY):
     """Fetches current weather data for a specified city using OpenWeatherMap API.
     Returns:
@@ -6,7 +7,7 @@ def get_weather_data(CITY):
     import requests
 
     # Replace with your API key and city
-    API_KEY = "8636db0878ce04062720e92752dc34f5"
+    API_KEY = os.environ['OPENWEATHER_API_KEY']
     
 
     # API request URL
@@ -21,3 +22,4 @@ def get_weather_data(CITY):
         temp_celsius = data['main']['temp']
         return str(temp_celsius)
     
+

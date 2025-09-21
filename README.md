@@ -44,11 +44,24 @@ This project is composed of the following files:
     cd stress-free-trip-planner
     ```
 
-2.  **Create a virtual environment:**
+2.  **Create and activate the virtual environment:**
+
+    First, create the virtual environment:
     ```bash
     python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
+
+    Then, activate it. The command differs depending on your operating system.
+
+    -   **On macOS and Linux:**
+        ```bash
+        source venv/bin/activate
+        ```
+
+    -   **On Windows:**
+        ```bash
+        .\venv\Scripts\activate
+        ```
 
 3.  **Install the dependencies:**
     ```bash

@@ -41,7 +41,7 @@ This project is composed of the following files:
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/chinmayc0707/travel_planner.git
-    cd trip-planner
+    cd travel_planner
     ```
 
 2.  **Create and activate the virtual environment:**

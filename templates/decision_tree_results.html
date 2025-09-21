@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decision Tree Test Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .results { margin: 20px 0; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #f2f2f2; }
+        .accuracy { color: #2c3e50; font-size: 1.2em; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Decision Tree Model Evaluation</h1>
+    
+    <div class="accuracy">
+        Model Accuracy: {{ accuracy }}%
+    </div>
+    
+    <h2>Sample Test Cases</h2>
+    <table>
+        <tr>
+            <th>Activity</th>
+            <th>Temperature</th>
+            <th>Predicted</th>
+            <th>Actual</th>
+        </tr>
+        {% for result in test_results %}
+        <tr>
+            <td>{{ result.activity }}</td>
+            <td>{{ result.temperature }}°C</td>
+            <td>{{ 'Enjoy' if result.predicted else 'Not Enjoy' }}</td>
+            <td>{{ 'Enjoy' if result.actual else 'Not Enjoy' }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -48,7 +48,7 @@ This project is composed of the following files:
 
     First, create the virtual environment:
     ```bash
-    python -m venv .venv
+    python -m venv venv
     ```
 
     Then, activate it. The command differs depending on your operating system.
